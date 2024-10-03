@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forside</title>
+</head>
+<body>
+    <header>
+        
+<h1>Registrer deg!</h1>
+    </header>
+    <body>
+        <section>
+            <h2>REGISTRERINGSSKJEMA</h2>
+            <form>
+                <label>Navn:
+                    <input type="navn" placeholder="Hansen jørgen.." id="navn" maxlength="38" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+                </label>
+                <label>E-post:
+                    <input type="email" placeholder="eksempel@gmail.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required></label>
+                <label>Passord:<input type="password" minlength="8" placeholder="Skriv inn passord her" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></label>
+                <label>Alder:<input type="number" min="18" max="99" required ></label>
+                <label>
+                        Telefon nr.:
+                        <input type="telefon" placeholder="Eks: 923 56 776" pattern="[0-9]">
+                    </label>
+                    <label>
+                        Fødselsdato: <input type="date" max="2024-09-11" required>
+                    </label>
+                    <label for="kjønn">Kjønn:</label>
+                    <label>
+                        Mann
+                        <input type="radio" name="valg" required>
+                       </label>
+                       <label>
+                        Kvinne
+                        <input type="radio" name="valg" required>
+                       </label>
+                       <label>
+                        Annet
+                        <input type="radio" name="valg" required>
+                       </label>
+                       <label>Land:<input type="rullegardinmeny (select)" required></label>
+                       <label>Personvern<input type="avkrysningsboks" required></label>
+
+            </form>
+        </section>
+    </body>
+    <footer>
+
+    </footer>
+</body>
+</html>

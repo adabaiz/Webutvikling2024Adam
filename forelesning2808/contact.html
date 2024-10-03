@@ -29,24 +29,49 @@
         </header>
         <main>
             <section>
-                <h2>Hvorfor skal det skje tredje verdenskrig?</h2>
-                <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-                <a href="about.html#kult">Les mer om hvorfor krigen startet</a>
+                <h2>Kontakt oss</h2>
             </section>
             <section>
-                <h2>Bakgrunnen krigen</h2>
-                <article>
-                    <h3>Startdato for krigen</h3>
-                    <p>At vero eos et accusamus et iusto o</p>  
-                    <a href="#">Les mer</a>           
-                 
-                </article>
-                <article>
-
-                    <h3>Hvilke land er med i krigen</h3>
-                    <p>At vero eos et accusamus et iusto o</p>
-                    <a href="">Les mer</a>
-                </article>
+                <h2>Ta kontakt med oss i dag</h2>
+                <form method="post" action="">
+                   <label for="navn">Navn:</label>
+                   <input type="text" name="navn" placeholder="Norda Nordmann.." id="navn" maxlength="38" required>
+                   <label>
+                       E-post:
+                       <input type="email" name="email" placeholder="eksempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                   </label>
+                   <label>
+                    Emne:
+                    <input type="text" name="emne" placeholder="Hva handler det om?">
+                   </label>
+                   <label>
+                    Melding
+                    <textarea name="melding" required></textarea>
+                   </label>
+                   <label for="kjønn">Kjønn:</label>
+                   <label>
+                    Nei
+                    <input type="radio" name="valg">
+                   </label>
+                   <label>
+                    Ja
+                    <input type="radio" name="valg">
+                   </label>
+                   <label>
+                    Kanskje
+                    <input type="radio" name="valg">
+                   </label>
+                   <input type="submmit" value="Send melding">
+                   <label>
+                    Favoritt mat
+                   <select name="fav">
+                    <option value="Pizza">Pizza</option>
+                    <option value="Sushi">Sushi</option>
+                    <option value="Kebab">Kebab</option>
+                   </select>
+                </label>
+ 
+                </form>
             </section>
         </main>
         <aside>
