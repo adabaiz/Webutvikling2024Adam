@@ -1,0 +1,8 @@
+@import 'colors.scss';
+@use 'layout.scss';
+@use 'loginn.scss';
+
+body{
+    background-color: rgb(48, 48, 243);
+    height: 100vh;
+}

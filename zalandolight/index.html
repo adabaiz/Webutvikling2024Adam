@@ -11,6 +11,7 @@
             <img id=main-logo src="img/nyzalandologo.jpg" alt="Nettsted logo">
             <link rel="stylesheet" href="css/style.css">
             <nav class="flex-space-b">
+                <i class="fa-solid" onclick="toggleMenu()"></i>
                 <ul class="flex-menu">
                     <li><a href="#">Nyheter</a></li>
                     <li><a href="#">Nordisk Stil</a></li>
@@ -30,7 +31,7 @@
             </nav>
         </header>
         <main>
-            <section>
+            <section id="banner">
                 <h2>Våre beste deals</h2>
                 <a href="#">Shop nå -></a>
                 <img src="img/sectionbanner.webp" alt="Våre beste deals">
@@ -95,5 +96,15 @@
         </main>
         <footer>Zalando Light 2024</footer>
     </div>
+    <script>
+        let toggleMenu = ()=>{
+            let x document.getElementbyId("menu")
+            if(x.style.display === "flex"){
+                x.style.display = "none"
+            }else{
+                x.style.display = "flex"
+            }
+        }
+    </script>
     </body>
 </html>
