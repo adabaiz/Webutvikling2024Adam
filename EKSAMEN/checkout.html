@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nettside Forside</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header" id="hjemmeside">
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html#hjemmeside" style="color: black; text-decoration: none;">Hjem</a></li>
+                <li><a href="index.html#våre-mest-populære-produkter" style="color: black; text-decoration: none;">Produkter</a></li>
+
+                <li class="logo">
+                    <a href="index.html"><img src="https://cdn.dribbble.com/userupload/10802037/file/original-06d13397b3ecee653ccd517160a41be0.jpg?resize=752x" alt="Logo" style="height: 40px;"></a>
+                </li>
+
+                <li><a href="index.html#våre-mest-populære-kategorier" style="color: black; text-decoration: none;">Kategorier</a></li>
+                <li><a href="index.html#kontakt-oss" style="color: black; text-decoration: none;">Kontakt oss</a></li>
+            </ul>
+        </nav>
+      <section class="søkogikoner">
+            <form class="search-bar">
+                <i class="fas fa-search"></i>
+                <label for="search"></label>
+                <input type="search" placeholder="Søk her" id="search">
+                <input type="submit" value="Søk">
+            </form>
+            <section class="ikon">
+                <i class="fas fa-user"></i>
+                <i class="fas fa-heart"></i>
+                <a href="checkout.html" style="color: black; text-decoration: none;"><i class="fas fa-shopping-cart"></i></a>
+                </section>
+        </section>
+        </header>
+<main>
+    <section>
+        <h1 class="kasse-skrift">Kasse</h1>
+        
+            <a href="product.html"><img src="https://www.thrifted.com/cdn/shop/files/3c874233-c953-400f-affd-ab1796f348fa_1260x.jpg?v=1731428392" alt="Stor-Bilde" width="600"></a>
+        <section class="product-info">
+        <h2>NIKE FLORIDA TEAM HOODIE - 3XL - GREY</h2>
+        <a href="https://www.nike.com/no/en/">NIKE</a>
+        <p>Pris: 599 kr</p>
+         <section class="color-dropdown">
+            <button class="dropdown-button">Color</button>
+            <section class="dropdown-list">
+                <p class="color-option">Grey</p>
+            </section>
+         </section>
+        </section>
+    </section>
+    <a href="product.html"><img src="https://www.thrifted.com/cdn/shop/files/3c874233-c953-400f-affd-ab1796f348fa_1260x.jpg?v=1731428392" alt="Stor-Bilde" width="600"></a>
+    <section class="product-info">
+    <h2>NIKE FLORIDA TEAM HOODIE - 3XL - GREY</h2>
+    <a href="https://www.nike.com/no/en/">NIKE</a>
+    <p>Pris: 599 kr</p>
+    <section class="color-dropdown">
+        <button class="dropdown-button">Color</button>
+        <section class="dropdown-list">
+            <p class="color-option">Grey</p>
+        </section>
+    </section>
+</section>
+
+<section class="betaling-form" id="personopplysninger">
+    <h2>Personopplysninger</h2>
+    <form action="/submit" method="post">
+      <label for="fornavn">Fornavn:</label>
+      <input type="text" id="fornavn" name="fornavn" required placeholder="Skriv inn fornavn">
+      
+      <label for="etternavn">Etternavn:</label>
+      <input type="text" id="etternavn" name="etternavn" required placeholder="Skriv inn etternavn">
+      
+      <label for="gateadresse">Gateadresse:</label>
+      <input type="text" id="gateadresse" name="gateadresse" required placeholder="Skriv inn gateadresse">
+      
+      <label for="postnummer">Postnummer:</label>
+      <input type="number" id="postnummer" name="postnummer" required placeholder="Skriv inn postnummer" min="0000" max="9999">
+      
+      <label for="poststed">Poststed:</label>
+      <input type="text" id="poststed" name="poststed" required placeholder="Skriv inn poststed">
+      
+      <div class="buttons">
+        <button type="submit">Lagre</button>
+        <button type="reset">Avbryt</button>
+      </div>
+    </form>
+  </section>
+
+  <section id="levering">
+    <h2>Levering</h2>
+    <form action="/submit-levering" method="post">
+      <p>Velg leveringsmetode:</p>
+      
+      <section>
+        <input type="radio" id="ekspress-hjem" name="levering" value="ekspress-hjem" required>
+        <label for="ekspress-hjem">Ekspresslevering hjem</label>
+    </section>
+  
+    <section>
+        <input type="radio" id="ekspress-utlevering" name="levering" value="ekspress-utlevering">
+        <label for="ekspress-utlevering">Ekspress pakke til utleveringssted</label>
+    </section>
+  
+    <section>
+        <input type="radio" id="standard-hjem" name="levering" value="standard-hjem">
+        <label for="standard-hjem">Standard hjemlevering</label>
+    </section>
+      
+      <button type="submit">Bekreft Levering</button>
+    </form>
+  </section>
+  <section id="betaling">
+    <h2>Betaling</h2>
+    
+   
+    <p>Beløp å betale: <strong>kr 599,00</strong></p>
+    
+  
+    <form action="/submit-betaling" method="post">
+      <label for="kortnummer">Kortnummer:</label>
+      <input type="text" id="kortnummer" name="kortnummer" required pattern="\d{16}" placeholder="Skriv inn 16-sifret kortnummer">
+  
+      <label for="utløpsdato">Utløpsdato:</label>
+      <input type="month" id="utløpsdato" name="utløpsdato" required>
+  
+      <label for="cvc">CVC/CVV:</label>
+      <input type="password" id="cvc" name="cvc" required pattern="\d{3}" placeholder="Skriv inn 3-sifret CVC">
+  
+      <button type="submit">Betal nå</button>
+      <fieldset>
+        <legend>Samtykke</legend>
+        <p>§ Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger.</p>
+        
+        <div class="checkbox1">
+          <input type="checkbox" id="godtar-vilkar" name="godtar-vilkar" required>
+          <label for="godtar-vilkar">Ja, jeg godtar vilkårene</label>
+        </div>
+  
+        <div>
+          <input type="checkbox" id="nyhetsbrev" name="nyhetsbrev">
+          <label for="nyhetsbrev">Ja takk! Send nyhetsbrev til meg</label>
+        </div>
+      </fieldset>
+     
+      
+  
+    </form>
+  </section>
+</main>
+    <footer>
+   
+   
+        <section class="footer-logo">
+            <a href="index.html"><img src="https://cdn.dribbble.com/userupload/10802037/file/original-06d13397b3ecee653ccd517160a41be0.jpg?resize=752x" alt="Nettbutikk Logo" style="height: 300px;"></a>
+       
+               <p>Oppdag din stil, når som helst, hvor som helst.</p>
+           </section>
+           
+       <section class="justfooter">
+           <section class="kontakinfo-footer" id="kontakt-oss">
+                   
+                   <h2>Kontakt oss</h2>
+                   <p>Telefon: +47 123 45 678</p>
+                   <p>E-post: kontakt@nettbutikk.no</p>
+                   <p>Adresse: Storgata 1, 0160 Oslo, Norge</p>
+           </section>
+           <section>
+            <nav>
+                <h2>Snarveier</h2>
+                <ul>
+                    <li><a href="index.html#hjemmeside" style="color: black; text-decoration: none;">Hjem</a></li>
+                    <li><a href="index.html#våre-mest-populære-produkter" style="color: black; text-decoration: none;">Produkter</a></li>
+                    <li><a href="index.html#våre-mest-populære-kategorier" style="color: black; text-decoration: none;">Kategorier</a></li>
+                    <li><a href="index.html#kontakt-oss" style="color: black; text-decoration: none;">Kontakt oss</a></li>
+                </ul>
+            </nav>
+            </section>
+          
+           <section class="sosiale-meder" id="sosiale-medier">
+               <h2>Sosiale medier</h2>
+               <a href="https://www.instagram.com" target="_blank" aria-label="Instagram" style="color: black; text-decoration: none;">
+                   <i class="fab fa-instagram"></i>
+               </a>
+               <a href="https://www.facebook.com" target="_blank" aria-label="Facebook" style="color: black; text-decoration: none;">
+                   <i class="fab fa-facebook"></i>
+               </a>
+               <a href="https://www.pinterest.com" target="_blank" aria-label="Pinterest" style="color: black; text-decoration: none;">
+                   <i class="fab fa-pinterest"></i>
+               </a>
+               <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn" style="color: black; text-decoration: none;">
+                   <i class="fab fa-linkedin"></i>
+               </a>
+               
+           </section>
+       </section>
+       
+           </footer>
+    </body>

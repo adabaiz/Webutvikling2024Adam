@@ -1,0 +1,644 @@
+body {
+    font-family: "Arial", sans-serif; 
+    background-color: rgb(255, 255, 255);
+    
+}
+ 
+.color-dropdown {
+    position: relative;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+}
+
+
+.dropdown-button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+    text-align: left;
+}
+
+
+.dropdown-list {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+    z-index: 10;
+}
+
+
+.color-dropdown:hover .dropdown-list,
+.dropdown-list:hover {
+    display: block;
+}
+
+
+.color-option {
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-align: left;
+}
+
+.color-option:hover {
+    background-color: #f5f5f5;
+}
+
+
+.nav-menu {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    background-color: white;
+    color: black; 
+    text-decoration: none; 
+    white-space: nowrap;
+}
+
+
+
+-------------------------------------
+
+.nav-menu a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%; 
+    box-sizing: border-box;
+    overflow-x: hidden; 
+   
+}
+
+.nav-menu b {
+    flex: 1; 
+    text-align: center; 
+    padding: 10px;
+    font-size: 0.85rem; 
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        justify-content: space-evenly;
+        flex-wrap: nowrap; 
+        gap: 5px; 
+    }
+
+    .nav-menu a {
+        font-size: 0.75rem; 
+        padding: 5px; 
+        color: black; 
+        text-decoration: none; 
+    }
+}
+.product-florida1{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 480px) { 
+    .product-florida1 img {
+        width: 80%; 
+        height: auto; 
+        margin: 0 auto; 
+    }
+
+    .product-florida1 {
+        padding: 10px; 
+    }
+}
+
+.produkter-hette ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    list-style: none;
+    padding: 0; 
+    margin: 0 20px; 
+  }
+  
+  .produkter-hette li {
+    background: #ffffff; 
+    padding: 20px;
+    text-align: left;
+   
+  
+  }
+
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    section {
+        flex-wrap: nowrap;
+    }
+
+    .product-info {
+        padding: 10px;
+    }
+}
+
+
+.produkter-hette li:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.produkter-hette li {
+    background-color: #ffffff;
+    padding: 10px;
+   
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.produkter-hette img {
+
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media (min-width: 1024px) {
+    .produkter-hette ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .produkter-hette li h1 {
+        font-size: 1.5rem; 
+    }
+
+    .produkter-hette li a, 
+    .produkter-hette li p {
+        font-size: 1rem; 
+    }
+}
+
+
+@media (max-width: 1023px) {
+    .produkter-hette ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .produkter-hette li h1 {
+        font-size: 0.70rem; 
+    }
+
+    .produkter-hette li a, 
+    .produkter-hette li p {
+        font-size: 0.85rem; 
+    }
+}
+
+
+.banner {
+    position: relative; 
+    background-color: #2a2a2a; 
+    overflow: hidden; 
+    color: white; 
+    text-align: left; 
+    padding: 20px; 
+    height: 300px;
+}
+
+
+.banner-bilde {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    z-index: -1; 
+}
+
+
+.banner-innhold {
+    position: relative; 
+    max-width: 50%;
+}
+
+
+.banner-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.banner-link:hover {
+    background-color: #ffffff; 
+}
+
+
+@media (max-width: 768px) {
+    .banner-innhold {
+        max-width: 80%; 
+    }
+
+    .banner {
+        text-align: left; 
+    }
+}
+.søkogikoner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.ikon {
+  margin-right: 7px;
+  margin-top: 10px;
+  color: black !important;
+}
+
+
+
+.søkogikoner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.søkogikoner input {
+    flex-grow: 1;
+    margin-right: 10px;
+    border-radius: 0%;
+    border: 2px solid #2a2a2a;
+    background-color: transparent;
+
+    
+}
+
+.søkogikoner .search-btn {
+    margin-right: 10px;
+}
+
+.søkogikoner .ikon {
+    display: flex;
+    gap: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .søkogikoner {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+   
+
+    .søkogikoner .ikon {
+        align-self: flex-end; 
+        
+    }
+}
+
+.Anmeldelser {
+    display: flex;
+    justify-content: space-between ;
+    padding: 20px;
+}
+
+.Anmeldelser article {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 285px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Anmeldelser article:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.Anmeldelser img {
+    width: 200px;  
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.Anmeldelser h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.Anmeldelser p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .Anmeldelser {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        padding: 10px; 
+    }
+
+    .Anmeldelser article {
+        width: 90%; 
+        margin-bottom: 20px; 
+    }
+}
+.kategorier{
+    
+    background: 
+    linear-gradient(to right, lightblue, lightgreen), 
+    radial-gradient(circle, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0) 70%);
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+.kategori-konteiner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10px;
+    gap: 10px; 
+}
+
+
+@media (max-width: 768px) {
+    .kategori-konteiner {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
+
+
+
+.kategori-overskrift{
+    margin: 10px;
+    color: rgb(237, 237, 237);
+    
+}
+
+.newstart{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.product-florida {
+    display: flex; 
+    flex-direction: column; 
+    
+    gap: 20px;
+}
+.product-florida1 img:nth-of-type(n+1) { 
+    display: inline-block;
+    margin: 0 10px; 
+    }
+
+
+  -------------------------------------------  
+
+
+----------------------------------------
+
+.snarveier1{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.justfooter{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    padding-top: 15px;
+    background-color: #838383;
+    border-radius: 1px;
+    
+}
+
+@media (max-width: 768px) {
+    .justfooter {
+        grid-template-columns: 1fr; 
+        padding: 15px; 
+    }
+}
+.kontakinfo-footer{
+    margin-left: 12px;
+}
+.sosiale-meder{
+    margin-left: 12px;
+}
+
+
+
+
+
+
+---------------------------------------
+
+#personopplysninger form {
+    background-color: #f0f8ff; 
+    border: 2px solid #0077b6; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#personopplysninger form input,
+#personopplysninger form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#personopplysninger form button {
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0077b6;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#personopplysninger form button:hover {
+    background-color: #005f8a;
+}
+
+
+#levering form {
+    background-color: #fafafa; 
+    border: 1px dashed #ccc; 
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#levering form section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#levering form section label {
+    flex: 1;
+}
+
+
+#levering form input[type="radio"] {
+    width: auto;
+}
+#levering form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    }
+
+
+ #levering form button {
+        font-size: 1em;
+        font-weight: bold;
+        color: #fff;
+        background-color: #0077b6;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+   #levering form button:hover {
+        background-color: #005f8a;
+        }
+
+
+#betaling form {
+    background-color: #fffbe6; 
+    border: 2px solid #ffa500; 
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#betaling form input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+#betaling form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#betaling form input[type="password"] {
+    font-family: sans-serif;
+    letter-spacing: 2px;
+}
+
+#betaling form fieldset {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#betaling form fieldset legend {
+    font-weight: bold;
+    color: #555;
+}
+
+
+#betaling form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+
+#betaling form button {
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0077b6;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#betaling form button:hover {
+    background-color: #005f8a;
+}
+
+#betaling .checkbox1 {
+    margin-top: 40px; 
+}
+
+---------------------------------------
+
+
+.banner-link {
+    font-size: 1em;
+    color: #fff;
+    background-color: #0077b6;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.banner-link:hover {
+    background-color: #005f8a;
+}
+
+.footer-logo{
+    margin-top: 20px;
+}

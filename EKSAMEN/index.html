@@ -1,90 +1,212 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="nb">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nettside Forside</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="hjemmeside">
         <nav>
-            <ul class="nav-meny">
-                <li><a href="#">Hjem</a></li>
-                <li><a href="#">Produkter</a></li>
+            <ul class="nav-menu">
+                <li><a href="#hjemmeside" style="color: black; text-decoration: none;">Hjem</a></li>
+                <li><a href="#våre-mest-populære-produkter" style="color: black; text-decoration: none;">Produkter</a></li>
 
                 <li class="logo">
-                    <a href="#"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cleanpng.com%2Fpng-zalando-logo-brand-symbol-design-aspekteins-6058613%2F&psig=AOvVaw1AYmYIdnTIh3zF9hq9uKsx&ust=1731354108923000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPjO3ufC0okDFQAAAAAdAAAAABAE" alt="Logo" style="height: 40px;"></a>
+                    <a href="index.html"><img src="https://cdn.dribbble.com/userupload/10802037/file/original-06d13397b3ecee653ccd517160a41be0.jpg?resize=752x" alt="Logo" style="height: 40px;"></a>
                 </li>
 
-                <li><a href="#">Kategorier</a></li>
-                <li><a href="#">Kontakt oss</a></li>
-                <form>
-                    <label for="search">Søk</label>
-                    <input type="search" placeholder="Her kan du søke etter produkter..." id="search">
-                    <input type="submit" value="søk">
-                </form>
+                <li><a href="#våre-mest-populære-kategorier" style="color: black; text-decoration: none;">Kategorier</a></li>
+                <li><a href="#kontakt-oss" style="color: black; text-decoration: none;">Kontakt oss</a></li>
             </ul>
         </nav>
-
+<section class="søkogikoner">
+    <section class="søkogfelt">
+    <form class="search-bar">
+        <i class="fas fa-search"></i>
+        <label for="search"></label>
+        <input type="search" placeholder="Søk her" id="search">
+        <input type="submit" value="Søk">
+    </form>
+    </section>   
+    
+    <section class="ikon">
+        <i class="fas fa-user"></i>
+        <i class="fas fa-heart"></i>
+        <a href="checkout.html" style="color: black; text-decoration: none;"><i class="fas fa-shopping-cart"></i></a>
+        
+      </section>
+    </section>   
     </header>
     <main>
         <section class="banner">
-            <h1 class="banner-overskrift">Velkommen til Vårt Nettside</h1>
-            <p class="banner-ingress">Oppdag våre spennende tjenester og produkter. Vi har noe for alle!</p>
-            <a href="#" class="banner-link">Les mer</a>
+            <section class="slide">
+                <h1 class="banner-overskrift">Velkommen til Vårt Nettside</h1>
+                <p class="banner-ingress">Oppdag våre spennende tjenester og produkter. Vi har noe for alle!</p>
+                <a href="#" class="banner-link">Les mer</a>
+            </section>
         </section>
-        <section class="produkter">
+        
+        <section class="produkter" id="våre-mest-populære-produkter">
             <h2>Våres mest populære produkter!</h2>
-            <article class="produkt-nike">
-                <img src="img/fotballsko.webp" alt="Nike Performance - Fotballsko">
-                <a href="#">Nike Performace - Fotballsko</a>
-                <a href="#"><h3>PHANTOM GX II PRO FG</h3></a>
-                <p>1299 kr</p>
-            </article>
-            <article class="produkt-nike">
-                <img src="img/fotballsko.webp" alt="Nike Performance - Fotballsko">
-                <a href="#">Nike Performace - Fotballsko</a>
-                <a href="#"><h3>PHANTOM GX II PRO FG</h3></a>
-                <p>1299 kr</p>
-            </article>
-            <article class="produkt-nike">
-                <img src="img/fotballsko.webp" alt="Nike Performance - Fotballsko">
-                <a href="#">Nike Performace - Fotballsko</a>
-                <a href="#"><h3>PHANTOM GX II PRO FG</h3></a>
-                <p>1299 kr</p>
-            </article>
+        <section class="produkter-hette">
+            <ul>
+              <li>
+              <a href="product.html#product-florida"><img src="https://www.thrifted.com/cdn/shop/files/3c874233-c953-400f-affd-ab1796f348fa_1260x.jpg?v=1731428392" alt="Stor-Bilde" width="300"></a>
+              <h1>NIKE FLORIDA TEAM HOODIE - 3XL - GREY</h1>
+              <a href="https://www.nike.com/no/en/">NIKE</a>
+              <p>599,00 kr</p>
+            </li>                <li>
+              <a href="product.html#product-florida"><img src="https://www.thrifted.com/cdn/shop/files/3c874233-c953-400f-affd-ab1796f348fa_1260x.jpg?v=1731428392" alt="Stor-Bilde" width="300"></a>
+              <h1>NIKE FLORIDA TEAM HOODIE - 3XL - GREY</h1>
+              <a href="https://www.nike.com/no/en/">NIKE</a>
+              <p>599,00 kr</p>
+            </li>
+             <li>
+              <a href="product.html#product-florida"><img src="https://www.thrifted.com/cdn/shop/files/3c874233-c953-400f-affd-ab1796f348fa_1260x.jpg?v=1731428392" alt="Stor-Bilde" width="300"></a>
+              <h1>NIKE FLORIDA TEAM HOODIE - 3XL - GREY</h1>
+              <a href="https://www.nike.com/no/en/">NIKE</a>
+              <p>599,00 kr</p>
+            </li>
+            <li>
+                <a href="product.html#product-florida"><img src="https://www.thrifted.com/cdn/shop/files/3c874233-c953-400f-affd-ab1796f348fa_1260x.jpg?v=1731428392" alt="Stor-Bilde" width="300"></a>
+                <h1>NIKE FLORIDA TEAM HOODIE - 3XL - GREY</h1>
+                <a href="https://www.nike.com/no/en/">NIKE</a>
+                <p>599,00 kr</p>
+              </li>
+              <li>
+                <a href="product.html#product-florida"><img src="https://www.thrifted.com/cdn/shop/files/3c874233-c953-400f-affd-ab1796f348fa_1260x.jpg?v=1731428392" alt="Stor-Bilde" width="300"></a>
+                <h1>NIKE FLORIDA TEAM HOODIE - 3XL - GREY</h1>
+                <a href="https://www.nike.com/no/en/">NIKE</a>
+                <p>599,00 kr</p>
+              </li>
+              <li>
+                <a href="product.html#product-florida"><img src="https://www.thrifted.com/cdn/shop/files/3c874233-c953-400f-affd-ab1796f348fa_1260x.jpg?v=1731428392" alt="Stor-Bilde" width="300"></a>
+                <h1>NIKE FLORIDA TEAM HOODIE - 3XL - GREY</h1>
+                <a href="https://www.nike.com/no/en/">NIKE</a>
+                <p>599,00 kr</p>
+              </li>
+            </ul>
+         
+                </section>
         </section>
-        <section class="kategorier">
-            <h2>Våre mest populære kategorier</h2>
+        <section class="kategorier" id="våre-mest-populære-kategorier">
+            <section class="kategori-overskrift">
+            <h2 style="font-size: 35px; color: white;">Våre mest populære kategorier</h2>
             <p>Utforsk våre mest populære kategorier med de nyeste trendene.</p>
+            </section>
             <section class="kategori-konteiner">
-                <article class="category-card">
-                  <img src="path/to/klær-image.jpg" alt="Kategoribilde">
+                <section class="herre">
+                    
                   <h2>Herreklær</h2>
-                  <a href="/herreklær">Utforsk</a>
-                </article>
+                  <a href="#"><img src="https://img01.ztat.net/banner/866abee52cff47588443c955cf2724f1/ed6e25c1be9d44e693aec53fe2612636.jpg?imwidth=1200" alt="herre-kategori" width="650"></a>
+                </section>
             
-                <article class="category-card">
-                  <img src="path/to/dameklær-image.jpg" alt="Kategoribilde">
+                <section class="dame">
+                
                   <h2>Dameklær</h2>
-                  <a href="/dameklær">Utforsk</a>
-                </article>
+                  <a href="#"><img src="https://img01.ztat.net/banner/259b533597d34df29a953d9d0d8f11ed/bf7c9e76900b45afa4402e0e01d70125.jpg?imwidth=1200" alt="dame-kategori" width="650"></a>
+                </section>
             
-                <article class="category-card">
-                  <img src="path/to/sportswear-image.jpg" alt="Kategoribilde">
+                <section class="sport">
+                 
                   <h2>Sportswear</h2>
-                  <a href="/sportswear">Utforsk</a>
-                </article>
-              </section>
-            
-        </section>
+                  <a href="#"><img src="https://img01.ztat.net/banner/9af08046eea4410c8f0d416432c28210/7ac2faad1a414e32860db57097668e3b.jpg?imwidth=1200" alt="sport-kategori" width="650"></a>
+                </section>
+             </section>
+          </section>  
+        
         <section class="#">
-            
+            <h1>Anmeldelser</h1>
+
+            <section class="Anmeldelser">
+                <article>
+                    <img src="https://www.thrifted.com/cdn/shop/files/ele_nike_true_religion_jackets167_82d75415-7503-46b1-aea0-8651a2080d29_1260x.jpg?v=1732033548" alt="Anmelder 1">
+                    
+                        <h2>Duis aute irure dolor in reprehenderit </h2>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </article>
+                
+        
+                <article>
+                    <img src="https://www.thrifted.com/cdn/shop/files/1c774b5d-239e-404f-b2b7-38ebd71f7730_1260x.jpg?v=1732120946" alt="Anmelder 2">
+                    
+                        <h2>Duis aute irure dolor in reprehenderit </h2>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                
+                </article>
+        
+                <article>
+                    <img src="https://www.thrifted.com/cdn/shop/files/Daisy_vintage_mix_22.11.24169_f7345627-e131-4205-b4f6-19484cd0a8a5_1260x.jpg?v=1732554101" alt="Anmelder 3">
+                    
+                        <h2>Duis aute irure dolor in reprehenderit </h2>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    
+                </article>
+        
+                
+                <article>
+                    <img src="https://www.thrifted.com/cdn/shop/files/laurel_ele_nascar_pro_sport199_4e297c6f-92f9-4ebc-aea6-c1550dd5a35a_1260x.jpg?v=1731948878" alt="Anmelder 4">
+                    
+                        <h2>Duis aute irure dolor in reprehenderit </h2>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        
+                
+                </article>
+            </section>
         </section>
 
     </main>
     <footer>
-
-    </footer>
+   
+   
+        <section class="footer-logo">
+            <a href="index.html"><img src="https://cdn.dribbble.com/userupload/10802037/file/original-06d13397b3ecee653ccd517160a41be0.jpg?resize=752x" alt="Nettbutikk Logo" style="height: 300px;"></a>
+       
+               <p>Oppdag din stil, når som helst, hvor som helst.</p>
+           </section>
+           
+       <section class="justfooter">
+           <section class="kontakinfo-footer" id="kontakt-oss">
+                   
+                   <h2>Kontakt oss</h2>
+                   <p>Telefon: +47 123 45 678</p>
+                   <p>E-post: kontakt@nettbutikk.no</p>
+                   <p>Adresse: Storgata 1, 0160 Oslo, Norge</p>
+           </section>
+           <section>
+            <nav>
+                <h2>Snarveier</h2>
+                <ul>
+                    <li><a href="index.html#hjemmeside" style="color: black; text-decoration: none;">Hjem</a></li>
+                    <li><a href="index.html#våre-mest-populære-produkter" style="color: black; text-decoration: none;">Produkter</a></li>
+                    <li><a href="index.html#våre-mest-populære-kategorier" style="color: black; text-decoration: none;">Kategorier</a></li>
+                    <li><a href="index.html#kontakt-oss" style="color: black; text-decoration: none;">Kontakt oss</a></li>
+                </ul>
+            </nav>
+            </section>
+          
+           <section class="sosiale-meder" id="sosiale-medier">
+               <h2>Sosiale medier</h2>
+               <a href="https://www.instagram.com" target="_blank" aria-label="Instagram" style="color: black; text-decoration: none;">
+                   <i class="fab fa-instagram"></i>
+               </a>
+               <a href="https://www.facebook.com" target="_blank" aria-label="Facebook" style="color: black; text-decoration: none;">
+                   <i class="fab fa-facebook"></i>
+               </a>
+               <a href="https://www.pinterest.com" target="_blank" aria-label="Pinterest" style="color: black; text-decoration: none;">
+                   <i class="fab fa-pinterest"></i>
+               </a>
+               <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn" style="color: black; text-decoration: none;">
+                   <i class="fab fa-linkedin"></i>
+               </a>
+               
+           </section>
+       </section>
+       
+           </footer>
 </body>
